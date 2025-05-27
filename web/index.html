@@ -19,6 +19,8 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="A new Flutter project.">
+  <meta name="google-signin-client_id" content=
+  "686903895705-sflbjfnpfqkg6i4bj17tdiq449dtth3m.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
@@ -34,5 +36,34 @@
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
+
+<script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-auth.js"></script>
+  
+
+  <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.8.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCZ88-NRKi9udAQz9xCbU1H4AdW1-P6mmE",
+    authDomain: "chordifyauth-5600c.firebaseapp.com",
+    projectId: "chordifyauth-5600c",
+    storageBucket: "chordifyauth-5600c.firebasestorage.app",
+    messagingSenderId: "686903895705",
+    appId: "1:686903895705:web:12923e711bb2f8a2b1ba08",
+    measurementId: "G-LFEHGTQB4K"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
 </body>
 </html>
